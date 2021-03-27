@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Chunk7&#39;s Blog</title>
-    <link>https://chunk7w.github.io/post/</link>
-    <description>Recent content in Posts on Chunk7&#39;s Blog</description>
+    <title>经验分享 on Chunk7&#39;s Blog</title>
+    <link>https://chunk7w.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</link>
+    <description>Recent content in 经验分享 on Chunk7&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 27 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chunk7w.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chunk7w.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何优雅的制作硬字幕熟肉</title>
       <link>https://chunk7w.github.io/p/sub-experience-00/</link>
@@ -18,15 +18,6 @@
 了解我的各位可能知道，我大概做了 5 年多的搬运（拿现在的话就是烤肉 man，准确点其实算是海盗&amp;hellip;），基本上填补了当时 Element Animation, ExplodingTNT 以及 Blue Monkey 在国内所有熟肉的空白（现在也可以算是）。虽然早期可能有一点功利化的因素存在，但到后来，就是纯粹地抱着「以尽自己所能的程度扩大原作影响力」「原作优先」的心态来做了，所有没有想通过烤肉来实现盈利，渐渐地就变成了一种兴趣爱好。
 说了我的前世，下面就来讲讲「最近的一件事」。
 没写完，先调试一下 Disqus</description>
-    </item>
-    
-    <item>
-      <title>Hello, World</title>
-      <link>https://chunk7w.github.io/p/hello-world/</link>
-      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://chunk7w.github.io/p/hello-world/</guid>
-      <description>Hello, World!</description>
     </item>
     
   </channel>
