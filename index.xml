@@ -14,7 +14,7 @@
         <guid>https://chunk7w.github.io/p/sub-experience-01/</guid>
         <description>&lt;img src="https://chunk7w.github.io/p/sub-experience-01/sub-experience-01.png" alt="Featured image of post 如何优雅的制作硬字幕熟肉 - 01" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;片源的质量，很大程度上决定了观众的观看体验，以及字幕编辑时的效果，一个稳定、高效、强大的片源获取渠道就显得尤为重要了（如果对方直接给你片源的话，那没事了）。&lt;/p&gt;
-&lt;p&gt;由于我大部分片源都来自 YouTube，因此，本文主要会围绕如何获取 YouTube 平台上的视频进行阐述，理论上也是可以解决的。&lt;/p&gt;
+&lt;p&gt;由于我大部分片源都来自 YouTube，因此，本文主要会围绕如何获取 YouTube 平台上的视频进行阐述，其他平台的获取方式大致相同。&lt;/p&gt;
 &lt;h2 id=&#34;强大的视频下载工具--youtube-dl&#34;&gt;强大的视频下载工具 —— youtube-dl&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://youtube-dl.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;strong&gt;youtube-dl&lt;/strong&gt;&lt;/a&gt; 是一个免费、开源的命令行视频下载工具，只需要一行命令就能搞定日常下载需求。&lt;/p&gt;
@@ -26,7 +26,7 @@
 &lt;h3 id=&#34;安装-youtube-dl&#34;&gt;安装 youtube-dl&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;方法一&lt;/strong&gt; 可以选择直接从 GitHub 的 &lt;a class=&#34;link&#34; href=&#34;https://github.com/ytdl-org/youtube-dl/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Release&lt;/a&gt; 里下载 &lt;code&gt;.exe&lt;/code&gt; 文件，随后找个硬盘里的风水宝地放下，并为 &lt;code&gt;youtube-dl.exe&lt;/code&gt; 设置环境变量，搞定。&lt;/li&gt;
+    &gt;Release&lt;/a&gt; 里下载 &lt;code&gt;.exe&lt;/code&gt; 文件，随后找个硬盘里的风水宝地放下，并为 &lt;code&gt;youtube-dl.exe&lt;/code&gt; 所在的文件夹设置环境变量，搞定。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;怕有人不知道怎么设置 PATH，这里提一嘴。&lt;/p&gt;
 &lt;p&gt;Windown 10 可以直接搜索 &lt;code&gt;PATH&lt;/code&gt; 来打开系统属性 → 环境变量 → 在 &lt;code&gt;系统变量&lt;/code&gt; 中找到 &lt;code&gt;Path&lt;/code&gt; → 编辑 → 新建 → 输入应用的绝对路径（例如 &lt;code&gt;C:\youtube-dl&lt;/code&gt; )，即可完成设置，其它方法就去问搜索引擎吧 😶。&lt;/p&gt;
