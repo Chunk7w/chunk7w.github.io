@@ -6,9 +6,27 @@
     <description>Recent content in 字幕 on Chunk7&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 27 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chunk7w.github.io/tags/%E5%AD%97%E5%B9%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chunk7w.github.io/tags/%E5%AD%97%E5%B9%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>如何优雅的制作硬字幕熟肉</title>
+      <title>如何优雅的制作硬字幕熟肉 - 01</title>
+      <link>https://chunk7w.github.io/p/sub-experience-01/</link>
+      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://chunk7w.github.io/p/sub-experience-01/</guid>
+      <description>前言 片源的质量，很大程度上决定了观众的观看体验，以及字幕编辑时的效果，一个稳定、高效、强大的片源获取渠道就显得尤为重要了（如果对方直接给你片源的话，那没事了）。
+由于我大部分片源都来自 YouTube，因此，本文主要会围绕如何获取 YouTube 平台上的视频进行阐述，理论上也是可以解决的。
+强大的视频下载工具 —— youtube-dl youtube-dl 是一个免费、开源的命令行视频下载工具，只需要一行命令就能搞定日常下载需求。
+ 虽然它名叫 youtube-dl(download)，但只要是你平常见得到的视频平台，youtube-dl 几乎都支持获取上面的视频。
+ 安装 安装分两步，先装 youtube-dl，再装 FFmpeg，后者可以用来更改视频封装格式或者直接重新编码。
+安装 youtube-dl  方法一 可以选择直接从 GitHub 的 Release 里下载 .exe 文件，随后找个硬盘里的风水宝地放下，并为 youtube-dl.exe 设置环境变量，搞定。  怕有人不知道怎么设置 PATH，这里提一嘴。
+Windown 10 可以直接搜索 PATH 来打开系统属性 → 环境变量 → 在 系统变量 中找到 Path → 编辑 → 新建 → 输入应用的绝对路径（例如 C:\youtube-dl )，即可完成设置，其它方法就去问搜索引擎吧 😶。
+  方法二 如果之前有装 Python，也可以在命令行中用 pip 搞定：
+pipinstallyoutube-dl#安装 pipinstall--upgradeyoutube-dl#升级 如果你是 macOS 用户，也可以这样装：
+brewinstallyoutube-dl 其他方法详见官方文档。</description>
+    </item>
+    
+    <item>
+      <title>如何优雅的制作硬字幕熟肉 - 00</title>
       <link>https://chunk7w.github.io/p/sub-experience-00/</link>
       <pubDate>Sat, 27 Mar 2021 00:00:00 +0000</pubDate>
       

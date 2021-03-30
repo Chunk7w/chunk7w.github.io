@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='获取高质量的视频资源'><title>如何优雅的制作硬字幕熟肉 - 01</title>
+
+<link rel='canonical' href='https://chunk7w.github.io/p/sub-experience-01/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='如何优雅的制作硬字幕熟肉 - 01'>
+<meta property='og:description' content='获取高质量的视频资源'>
+<meta property='og:url' content='https://chunk7w.github.io/p/sub-experience-01/'>
+<meta property='og:site_name' content='Chunk7&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='经验分享' /><meta property='article:tag' content='字幕' /><meta property='article:tag' content='生产力工具' /><meta property='article:published_time' content='2021-03-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-03-30T11:30:25&#43;08:00'/><meta property='og:image' content='https://chunk7w.github.io/p/sub-experience-01/sub-experience-01.png' />
+<meta name="twitter:title" content="如何优雅的制作硬字幕熟肉 - 01">
+<meta name="twitter:description" content="获取高质量的视频资源"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://chunk7w.github.io/p/sub-experience-01/sub-experience-01.png' />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-LPBMW3FT27', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hudb13bb789c09f9b1043f485f072952a1_24812_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍂</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://chunk7w.github.io">Chunk7&#39;s Blog</a></h1>
+        <h2 class="site-description">树洞频道</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>暗色模式</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://chunk7w.github.io" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/sub-experience-01/">
+                <img src="/p/sub-experience-01/sub-experience-01_hue93318bc092186ce612cac93b471369a_57624_800x0_resize_box_2.png"
+                        srcset="/p/sub-experience-01/sub-experience-01_hue93318bc092186ce612cac93b471369a_57624_800x0_resize_box_2.png 800w, /p/sub-experience-01/sub-experience-01_hue93318bc092186ce612cac93b471369a_57624_1600x0_resize_box_2.png 1600w"
+                        width="800" 
+                        height="267" 
+                        loading="lazy"
+                        alt="Featured image of post 如何优雅的制作硬字幕熟肉 - 01" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/" style="background-color: #ffb800; color: #fff;">
+                经验分享
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/sub-experience-01/">如何优雅的制作硬字幕熟肉 - 01</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        获取高质量的视频资源
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Mar 30, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="前言">前言</h2>
+<p>片源的质量，很大程度上决定了观众的观看体验，以及字幕编辑时的效果，一个稳定、高效、强大的片源获取渠道就显得尤为重要了（如果对方直接给你片源的话，那没事了）。</p>
+<p>由于我大部分片源都来自 YouTube，因此，本文主要会围绕如何获取 YouTube 平台上的视频进行阐述，理论上也是可以解决的。</p>
+<h2 id="强大的视频下载工具--youtube-dl">强大的视频下载工具 —— youtube-dl</h2>
+<p><a class="link" href="https://youtube-dl.org/"  target="_blank" rel="noopener"
+    ><strong>youtube-dl</strong></a> 是一个免费、开源的命令行视频下载工具，只需要一行命令就能搞定日常下载需求。</p>
+<blockquote>
+<p>虽然它名叫 youtube-dl(<strong>d</strong>own<strong>l</strong>oad)，但只要是你平常见得到的视频平台，youtube-dl 几乎都支持获取上面的视频。</p>
+</blockquote>
+<h2 id="安装">安装</h2>
+<p>安装分两步，先装 youtube-dl，再装 FFmpeg，后者可以用来更改视频封装格式或者直接重新编码。</p>
+<h3 id="安装-youtube-dl">安装 youtube-dl</h3>
+<ul>
+<li><strong>方法一</strong> 可以选择直接从 GitHub 的 <a class="link" href="https://github.com/ytdl-org/youtube-dl/releases"  target="_blank" rel="noopener"
+    >Release</a> 里下载 <code>.exe</code> 文件，随后找个硬盘里的风水宝地放下，并为 <code>youtube-dl.exe</code> 设置环境变量，搞定。</li>
+</ul>
+<p>怕有人不知道怎么设置 PATH，这里提一嘴。</p>
+<p>Windown 10 可以直接搜索 <code>PATH</code> 来打开系统属性 → 环境变量 → 在 <code>系统变量</code> 中找到 <code>Path</code> → 编辑 → 新建 → 输入应用的绝对路径（例如 <code>C:\youtube-dl</code> )，即可完成设置，其它方法就去问搜索引擎吧 😶。</p>
+<ul>
+<li>
+<p><strong>方法二</strong> 如果之前有装 Python，也可以在命令行中用 pip 搞定：</p>
+<div class="highlight"><pre class="chroma"><code class="language-basic" data-lang="basic"><span class="vg">pip</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w">            </span><span class="err">#</span><span class="vg">安装</span>
+<span class="vg">pip</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">upgrade</span><span class="w"> </span><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w">  </span><span class="err">#</span><span class="vg">升级</span>
+</code></pre></div><p>如果你是 macOS 用户，也可以这样装：</p>
+<div class="highlight"><pre class="chroma"><code class="language-basic" data-lang="basic"><span class="vg">brew</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span>
+</code></pre></div><p>其他方法详见<a class="link" href="https://ytdl-org.github.io/youtube-dl/download.html"  target="_blank" rel="noopener"
+    >官方文档</a>。</p>
+</li>
+</ul>
+<p>安装完成后，在命令行工具中执行 <code>youtube-dl</code> ，出现以下提示即为安装成功：</p>
+<div class="highlight"><pre class="chroma"><code class="language-basic" data-lang="basic"><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span>
+<span class="nl">Usage:</span><span class="w"> </span><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="o">.</span><span class="vg">exe</span><span class="w"> </span><span class="p">[</span><span class="vg">OPTIONS</span><span class="p">]</span><span class="w"> </span><span class="vg">URL</span><span class="w"> </span><span class="p">[</span><span class="vg">URL</span><span class="o">...</span><span class="p">]</span>
+
+<span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="o">.</span><span class="nl">exe:</span><span class="w"> </span><span class="nl">error:</span><span class="w"> </span><span class="vg">You</span><span class="w"> </span><span class="vg">must</span><span class="w"> </span><span class="vg">provide</span><span class="w"> </span><span class="vg">at</span><span class="w"> </span><span class="vg">least</span><span class="w"> </span><span class="vg">one</span><span class="w"> </span><span class="vg">URL</span><span class="o">.</span>
+<span class="vg">Type</span><span class="w"> </span><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w"> </span><span class="o">--</span><span class="vg">help</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">see</span><span class="w"> </span><span class="vg">a</span><span class="w"> </span><span class="vg">list</span><span class="w"> </span><span class="vg">of</span><span class="w"> </span><span class="vg">all</span><span class="w"> </span><span class="vg">options</span><span class="o">.</span>
+</code></pre></div><h3 id="安装-ffmpeg">安装 FFmpeg</h3>
+<p>打开 <a class="link" href="http://ffmpeg.org/"  target="_blank" rel="noopener"
+    >FFmpeg</a> 官网，根据需求下载对应的构建：</p>
+<p><figure style="flex-grow: 211; flex-basis: 506px">
+		<a href="/p/sub-experience-01/ffmpeg-org.png" data-size="1899x900"><img src="/p/sub-experience-01/ffmpeg-org.png"
+				srcset="/p/sub-experience-01/ffmpeg-org_hu353a4f7b01e30a7324240b2302ae1051_116854_480x0_resize_box_2.png 480w, /p/sub-experience-01/ffmpeg-org_hu353a4f7b01e30a7324240b2302ae1051_116854_1024x0_resize_box_2.png 1024w"
+				width="1899"
+				height="900"
+				loading="lazy"
+				alt="从 FFmpeg.org 获取与系统对应的 .exe 文件">
+		</a>
+		
+		<figcaption>从 FFmpeg.org 获取与系统对应的 .exe 文件</figcaption>
+		
+	</figure></p>
+<p><figure style="flex-grow: 184; flex-basis: 443px">
+		<a href="/p/sub-experience-01/ffmpeg-builds.png" data-size="1662x900"><img src="/p/sub-experience-01/ffmpeg-builds.png"
+				srcset="/p/sub-experience-01/ffmpeg-builds_hu4433e107b79459838f95b1f4f5cc6f1f_113722_480x0_resize_box_2.png 480w, /p/sub-experience-01/ffmpeg-builds_hu4433e107b79459838f95b1f4f5cc6f1f_113722_1024x0_resize_box_2.png 1024w"
+				width="1662"
+				height="900"
+				loading="lazy"
+				alt="下载构建">
+		</a>
+		
+		<figcaption>下载构建</figcaption>
+		
+	</figure></p>
+<blockquote>
+<p>这里 <code>shared</code> 的其实是 FFmpeg 的 library，方便开发者配置编译环境，但缺点是 <code>ffmpeg.exe</code> 无法单独拎出来用，故不做推荐。其余的只是协议不同或者是不是基于 Vulkan，看心情选就好（</p>
+</blockquote>
+<p>解压后，在 <code>bin</code> 文件夹里就能找到 <code>ffmpeg.exe</code> ，此时再为 FFmpeg 设置 PATH 即可，在 CMD 中执行 <code>ffmpeg</code> 验证安装结果。</p>
+<h2 id="常用的-youtube-dl-命令">常用的 youtube-dl 命令</h2>
+<p>youtube-dl 的教程网上一抓一大把，故不在此赘述，所以我们来讲一些比较常用的命令。</p>
+<h3 id="代理">代理</h3>
+<p>最简单的方式就是启用全局代理，或者上 Clash 这类能完全接管系统代理的工具，这样就不需要在每次敲命令时都加一段 <code>--proxy 127.0.0.1:1080</code> 了。</p>
+<h3 id="获取可用的媒体源">获取可用的媒体源</h3>
+<p>假设我们要下载 <strong><a class="link" href="https://www.youtube.com/watch?v=lGFEqEFJ410"  target="_blank" rel="noopener"
+    >ツユ - 過去に囚われている MV</a></strong>，我们需要先看看这个视频有哪些可供下载的格式：</p>
+<div class="highlight"><pre class="chroma"><code class="language-basic" data-lang="basic"><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w"> </span><span class="o">-</span><span class="vg">F</span><span class="w"> </span><span class="p">[</span><span class="vg">URL</span><span class="p">]</span>
+<span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w"> </span><span class="o">-</span><span class="vg">F</span><span class="w"> </span><span class="nl">https:</span><span class="o">//</span><span class="vg">www</span><span class="o">.</span><span class="vg">youtube</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">watch</span><span class="o">?</span><span class="vg">v</span><span class="o">=</span><span class="vg">lGFEqEFJ410</span>
+
+<span class="p">[</span><span class="vg">youtube</span><span class="p">]</span><span class="w"> </span><span class="nl">lGFEqEFJ410:</span><span class="w"> </span><span class="vg">Downloading</span><span class="w"> </span><span class="vg">webpage</span>
+<span class="p">[</span><span class="vg">info</span><span class="p">]</span><span class="w"> </span><span class="vg">Available</span><span class="w"> </span><span class="vg">formats</span><span class="w"> </span><span class="vg">for</span><span class="w"> </span><span class="nl">lGFEqEFJ410:</span>
+<span class="vg">format</span><span class="w"> </span><span class="vg">code</span><span class="w">  </span><span class="vg">extension</span><span class="w">  </span><span class="vg">resolution</span><span class="w"> </span><span class="vg">note</span>
+<span class="nl">249</span><span class="w">          </span><span class="vg">webm</span><span class="w">       </span><span class="vg">audio</span><span class="w"> </span><span class="vg">only</span><span class="w"> </span><span class="vg">tiny</span><span class="w">   </span><span class="il">57</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">opus</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="il">50</span><span class="vg">k</span><span class="w"> </span><span class="p">(</span><span class="il">48000</span><span class="vg">Hz</span><span class="p">),</span><span class="w"> </span><span class="mf">1.45</span><span class="vg">MiB</span>
+<span class="nl">250</span><span class="w">          </span><span class="vg">webm</span><span class="w">       </span><span class="vg">audio</span><span class="w"> </span><span class="vg">only</span><span class="w"> </span><span class="vg">tiny</span><span class="w">   </span><span class="il">75</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">opus</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="il">70</span><span class="vg">k</span><span class="w"> </span><span class="p">(</span><span class="il">48000</span><span class="vg">Hz</span><span class="p">),</span><span class="w"> </span><span class="mf">1.92</span><span class="vg">MiB</span>
+<span class="nl">140</span><span class="w">          </span><span class="vg">m4a</span><span class="w">        </span><span class="vg">audio</span><span class="w"> </span><span class="vg">only</span><span class="w"> </span><span class="vg">tiny</span><span class="w">  </span><span class="il">130</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">m4a_dash</span><span class="w"> </span><span class="vg">container</span><span class="p">,</span><span class="w"> </span><span class="vg">mp4a</span><span class="mf">.40.2@</span><span class="il">128</span><span class="vg">k</span><span class="w"> </span><span class="p">(</span><span class="il">44100</span><span class="vg">Hz</span><span class="p">),</span><span class="w"> </span><span class="mf">3.56</span><span class="vg">MiB</span>
+<span class="nl">251</span><span class="w">          </span><span class="vg">webm</span><span class="w">       </span><span class="vg">audio</span><span class="w"> </span><span class="vg">only</span><span class="w"> </span><span class="vg">tiny</span><span class="w">  </span><span class="il">147</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">opus</span><span class="w"> </span><span class="err">@</span><span class="il">160</span><span class="vg">k</span><span class="w"> </span><span class="p">(</span><span class="il">48000</span><span class="vg">Hz</span><span class="p">),</span><span class="w"> </span><span class="mf">3.77</span><span class="vg">MiB</span>
+<span class="nl">278</span><span class="w">          </span><span class="vg">webm</span><span class="w">       </span><span class="il">256</span><span class="vg">x144</span><span class="w">    </span><span class="il">144</span><span class="vg">p</span><span class="w">  </span><span class="il">147</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">webm</span><span class="w"> </span><span class="vg">container</span><span class="p">,</span><span class="w"> </span><span class="vg">vp9</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">2.27</span><span class="vg">MiB</span>
+<span class="nl">394</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">256</span><span class="vg">x144</span><span class="w">    </span><span class="il">144</span><span class="vg">p</span><span class="w">  </span><span class="il">173</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">av01</span><span class="mf">.0.00</span><span class="vg">M</span><span class="mf">.08</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">1.91</span><span class="vg">MiB</span>
+<span class="nl">160</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">256</span><span class="vg">x144</span><span class="w">    </span><span class="il">144</span><span class="vg">p</span><span class="w">  </span><span class="il">214</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">avc1</span><span class="mf">.4</span><span class="vg">d400c</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">2.26</span><span class="vg">MiB</span>
+<span class="nl">395</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">426</span><span class="vg">x240</span><span class="w">    </span><span class="il">240</span><span class="vg">p</span><span class="w">  </span><span class="il">279</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">av01</span><span class="mf">.0.00</span><span class="vg">M</span><span class="mf">.08</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">3.49</span><span class="vg">MiB</span>
+<span class="nl">242</span><span class="w">          </span><span class="vg">webm</span><span class="w">       </span><span class="il">426</span><span class="vg">x240</span><span class="w">    </span><span class="il">240</span><span class="vg">p</span><span class="w">  </span><span class="il">307</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">vp9</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">4.60</span><span class="vg">MiB</span>
+<span class="nl">133</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">426</span><span class="vg">x240</span><span class="w">    </span><span class="il">240</span><span class="vg">p</span><span class="w">  </span><span class="il">437</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">avc1</span><span class="mf">.4</span><span class="vg">d4015</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">4.50</span><span class="vg">MiB</span>
+<span class="nl">396</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">640</span><span class="vg">x360</span><span class="w">    </span><span class="il">360</span><span class="vg">p</span><span class="w">  </span><span class="il">484</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">av01</span><span class="mf">.0.01</span><span class="vg">M</span><span class="mf">.08</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">7.00</span><span class="vg">MiB</span>
+<span class="nl">243</span><span class="w">          </span><span class="vg">webm</span><span class="w">       </span><span class="il">640</span><span class="vg">x360</span><span class="w">    </span><span class="il">360</span><span class="vg">p</span><span class="w">  </span><span class="il">527</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">vp9</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">8.35</span><span class="vg">MiB</span>
+<span class="nl">397</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">854</span><span class="vg">x480</span><span class="w">    </span><span class="il">480</span><span class="vg">p</span><span class="w">  </span><span class="il">796</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">av01</span><span class="mf">.0.04</span><span class="vg">M</span><span class="mf">.08</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">12.41</span><span class="vg">MiB</span>
+<span class="nl">134</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">640</span><span class="vg">x360</span><span class="w">    </span><span class="il">360</span><span class="vg">p</span><span class="w">  </span><span class="il">830</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">avc1</span><span class="mf">.4</span><span class="vg">d401e</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">9.40</span><span class="vg">MiB</span>
+<span class="nl">244</span><span class="w">          </span><span class="vg">webm</span><span class="w">       </span><span class="il">854</span><span class="vg">x480</span><span class="w">    </span><span class="il">480</span><span class="vg">p</span><span class="w">  </span><span class="il">833</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">vp9</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">14.39</span><span class="vg">MiB</span>
+<span class="nl">135</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">854</span><span class="vg">x480</span><span class="w">    </span><span class="il">480</span><span class="vg">p</span><span class="w"> </span><span class="il">1283</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">avc1</span><span class="mf">.4</span><span class="vg">d401e</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">15.21</span><span class="vg">MiB</span>
+<span class="nl">398</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">1280</span><span class="vg">x720</span><span class="w">   </span><span class="il">720</span><span class="vg">p</span><span class="w"> </span><span class="il">1305</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">av01</span><span class="mf">.0.05</span><span class="vg">M</span><span class="mf">.08</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">22.60</span><span class="vg">MiB</span>
+<span class="nl">247</span><span class="w">          </span><span class="vg">webm</span><span class="w">       </span><span class="il">1280</span><span class="vg">x720</span><span class="w">   </span><span class="il">720</span><span class="vg">p</span><span class="w"> </span><span class="il">1518</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">vp9</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">27.03</span><span class="vg">MiB</span>
+<span class="nl">399</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">1920</span><span class="vg">x1080</span><span class="w">  </span><span class="il">1080</span><span class="vg">p</span><span class="w"> </span><span class="il">2186</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">av01</span><span class="mf">.0.08</span><span class="vg">M</span><span class="mf">.08</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">39.23</span><span class="vg">MiB</span>
+<span class="nl">136</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">1280</span><span class="vg">x720</span><span class="w">   </span><span class="il">720</span><span class="vg">p</span><span class="w"> </span><span class="il">2331</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">avc1</span><span class="mf">.4</span><span class="vg">d401f</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">28.24</span><span class="vg">MiB</span>
+<span class="nl">248</span><span class="w">          </span><span class="vg">webm</span><span class="w">       </span><span class="il">1920</span><span class="vg">x1080</span><span class="w">  </span><span class="il">1080</span><span class="vg">p</span><span class="w"> </span><span class="il">2650</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">vp9</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">54.91</span><span class="vg">MiB</span>
+<span class="nl">137</span><span class="w">          </span><span class="vg">mp4</span><span class="w">        </span><span class="il">1920</span><span class="vg">x1080</span><span class="w">  </span><span class="il">1080</span><span class="vg">p</span><span class="w"> </span><span class="il">4460</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">avc1</span><span class="mf">.640028</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">video</span><span class="w"> </span><span class="vg">only</span><span class="p">,</span><span class="w"> </span><span class="mf">79.02</span><span class="vg">MiB</span>
+<span class="nl">18</span><span class="w">           </span><span class="vg">mp4</span><span class="w">        </span><span class="il">640</span><span class="vg">x360</span><span class="w">    </span><span class="il">360</span><span class="vg">p</span><span class="w">  </span><span class="il">651</span><span class="vg">k</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="vg">avc1</span><span class="mf">.42001</span><span class="vg">E</span><span class="p">,</span><span class="w"> </span><span class="il">24</span><span class="vg">fps</span><span class="p">,</span><span class="w"> </span><span class="vg">mp4a</span><span class="mf">.40.2@</span><span class="w"> </span><span class="il">96</span><span class="vg">k</span><span class="w"> </span><span class="p">(</span><span class="il">44100</span><span class="vg">Hz</span><span class="p">),</span><span class="w"> </span><span class="mf">17.92</span><span class="vg">MiB</span><span class="w"> </span><span class="p">(</span><span class="vg">best</span><span class="p">)</span>
+</code></pre></div><p>至于为什么要先获取可用格式列表，这都得益于 youtube-dl 的一个迷之<del>狗屎</del>设定。youtube-dl 在默认情况下，确实会下载最高质量的视频，但仅限于<strong>同时包含视频流和音频流</strong>的最高质量的视频。</p>
+<p>从上面的例子来看，只有 <code>18</code> 号才是 <em><strong>best</strong></em> 视频，它重新定义了最佳画质 <em>(大嘘)</em>。加上 youtube-dl 似乎也没有让用户重新定义 <code>best</code> 规则的功能，所以不能直接无脑 <code>youtube-dl URL</code> 来下载，只能分别选择音频和视频，最后再一起下载。</p>
+<h3 id="下载">下载</h3>
+<ul>
+<li>
+<p><strong>选择媒体格式</strong> 根据格式列表可知，最高质量视频的 <code>format code</code> 为 <code>137</code> ，而最高质量的音频为 <code>251</code> ，于是我们得到了一个最基础的命令：</p>
+<div class="highlight"><pre class="chroma"><code class="language-basic" data-lang="basic"><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w"> </span><span class="o">-</span><span class="vg">f</span><span class="w"> </span><span class="s2">&#34;视频+音频&#34;</span><span class="w"> </span><span class="p">[</span><span class="vg">URL</span><span class="p">]</span>
+<span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w"> </span><span class="o">-</span><span class="vg">f</span><span class="w"> </span><span class="s2">&#34;137+251&#34;</span><span class="w"> </span><span class="nl">https:</span><span class="o">//</span><span class="vg">www</span><span class="o">.</span><span class="vg">youtube</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">watch</span><span class="o">?</span><span class="vg">v</span><span class="o">=</span><span class="vg">lGFEqEFJ410</span>
+</code></pre></div><p>或者有个更简单粗暴的方式，但我不确定这样写会不会在一些特殊情况下选错媒体格式：</p>
+<div class="highlight"><pre class="chroma"><code class="language-basic" data-lang="basic"><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w"> </span><span class="o">-</span><span class="vg">f</span><span class="w"> </span><span class="s2">&#34;bestvideo+bestaudio&#34;</span><span class="w"> </span><span class="nl">https:</span><span class="o">//</span><span class="vg">www</span><span class="o">.</span><span class="vg">youtube</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">watch</span><span class="o">?</span><span class="vg">v</span><span class="o">=</span><span class="vg">lGFEqEFJ410</span>
+</code></pre></div><p>不过这里还有个坑，Aegisub 不能识别 <code>opus</code> 编码的音频流，即 <code>format code</code> = <code>249</code>, <code>250</code>, <code>251</code> 。</p>
+<p>如果视频本身对音频质量的要求不高的话，可以直接拿 <code>m4a</code> 格式的音频来用，即 <code>format code</code> = <code>140</code> ，或者将视音频分开来下载，之后再把 <code>opus</code> 的音频重新编码为 <code>aac</code> 来使用。</p>
+<p>如果要单独下载音频的话，只选一个 <code>format code</code> 即可：</p>
+<div class="highlight"><pre class="chroma"><code class="language-basic" data-lang="basic"><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w"> </span><span class="o">-</span><span class="vg">f</span><span class="w"> </span><span class="il">140</span><span class="w"> </span><span class="nl">https:</span><span class="o">//</span><span class="vg">www</span><span class="o">.</span><span class="vg">youtube</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">watch</span><span class="o">?</span><span class="vg">v</span><span class="o">=</span><span class="vg">lGFEqEFJ410</span>
+</code></pre></div></li>
+<li>
+<p><strong>修改视频封装格式</strong> youtube-dl 的默认封装格式为 <code>mkv</code> ，如果需要的话，可以将封装格式改为 <code>mp4</code> ：</p>
+<div class="highlight"><pre class="chroma"><code class="language-basic" data-lang="basic"><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w"> </span><span class="o">-</span><span class="vg">f</span><span class="w"> </span><span class="s2">&#34;137+251&#34;</span><span class="w"> </span><span class="o">--</span><span class="vg">merge</span><span class="o">-</span><span class="vg">output</span><span class="o">-</span><span class="vg">format</span><span class="w"> </span><span class="vg">mp4</span><span class="w"> </span><span class="nl">https:</span><span class="o">//</span><span class="vg">www</span><span class="o">.</span><span class="vg">youtube</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">watch</span><span class="o">?</span><span class="vg">v</span><span class="o">=</span><span class="vg">lGFEqEFJ410</span>
+</code></pre></div><p>封装的过程不会涉及到编码，所以如果你选择了 <code>opus</code> 编码的音频源，可能需要重新编码整个视频。但如果是分开来下载的话，音频转码完成之后再封装就能省下很多时间。</p>
+</li>
+<li>
+<p><strong>设置保存路径</strong> youtube-dl 默认会将视频保存到 <code>C:\Users\用户名</code> ，如果要自定义保存位置和文件名，可以带上 <code>-o</code> 参数：</p>
+<div class="highlight"><pre class="chroma"><code class="language-basic" data-lang="basic"><span class="vg">youtube</span><span class="o">-</span><span class="vg">dl</span><span class="w"> </span><span class="o">-</span><span class="vg">f</span><span class="w"> </span><span class="s2">&#34;137+251&#34;</span><span class="w"> </span><span class="o">--</span><span class="vg">merge</span><span class="o">-</span><span class="vg">output</span><span class="o">-</span><span class="vg">format</span><span class="w"> </span><span class="vg">mp4</span><span class="w"> </span><span class="o">-</span><span class="vg">o</span><span class="w"> </span><span class="s2">&#34;E:\Works\Videos\生肉\%(title)s.%(ext)s&#34;</span><span class="w"> </span><span class="nl">https:</span><span class="o">//</span><span class="vg">www</span><span class="o">.</span><span class="vg">youtube</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">watch</span><span class="o">?</span><span class="vg">v</span><span class="o">=</span><span class="vg">lGFEqEFJ410</span>
+</code></pre></div><p>更多的格式占位符及其用法详见<a class="link" href="https://github.com/ytdl-org/youtube-dl#output-template"  target="_blank" rel="noopener"
+    >官方文档</a>。</p>
+</li>
+</ul>
+<p>至此，视频下载工作圆满结束，接下来我们将切入字幕制作的核心 —— Aegisub 实用技巧。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">经验分享</a>
+        
+            <a href="/tags/%E5%AD%97%E5%B9%95/">字幕</a>
+        
+            <a href="/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/">生产力工具</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span class="article-time--modified">
+            最后更新于 Mar 30, 2020 11:30 CST
+        </span>
+    </section></footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/sub-experience-00/">
+        
+        
+            <div class="article-image">
+                <img src="/p/sub-experience-00/sub-experience-00.b50f4748cf324b7e1ba76726e93ad0eb_hu18dddd796e29351b5eb8229ead349619_61520_250x150_fill_box_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="sub-experience-00" 
+                        data-hash="md5-tQ9HSM8yS34bp2cm6TrQ6w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">如何优雅的制作硬字幕熟肉 - 00</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="Chunk7w/chunk7w.github.io"
+        issue-term="pathname"
+        
+        label="Comments"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+        setUtterancesTheme(document.body.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Chunk7&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        
+            Writing while 👋🐟 <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
