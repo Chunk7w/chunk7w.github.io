@@ -25,8 +25,11 @@
 &lt;p&gt;安装分两步，先装 youtube-dl，再装 FFmpeg，后者可以用来更改视频封装格式或者直接重新编码。&lt;/p&gt;
 &lt;h3 id=&#34;安装-youtube-dl&#34;&gt;安装 youtube-dl&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;方法一&lt;/strong&gt; 可以选择直接从 GitHub 的 &lt;a class=&#34;link&#34; href=&#34;https://github.com/ytdl-org/youtube-dl/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Release&lt;/a&gt; 里下载 &lt;code&gt;.exe&lt;/code&gt; 文件，随后找个硬盘里的风水宝地放下，并为 &lt;code&gt;youtube-dl.exe&lt;/code&gt; 所在的文件夹设置环境变量，搞定。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;方法一&lt;/strong&gt; 可以选择直接从 GitHub 的 &lt;a class=&#34;link&#34; href=&#34;https://github.com/ytdl-org/youtube-dl/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Release&lt;/a&gt; 里下载 &lt;code&gt;.exe&lt;/code&gt; 文件，随后找个硬盘里的风水宝地放下，并为 &lt;code&gt;youtube-dl.exe&lt;/code&gt; 所在的文件夹设置环境变量，搞定。&lt;/p&gt;
+&lt;p&gt;若需要更新 youtube-dl，可执行 &lt;code&gt;youtube-dl -U&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;怕有人不知道怎么设置 PATH，这里提一嘴。&lt;/p&gt;
 &lt;p&gt;Windown 10 可以直接搜索 &lt;code&gt;PATH&lt;/code&gt; 来打开系统属性 → 环境变量 → 在 &lt;code&gt;系统变量&lt;/code&gt; 中找到 &lt;code&gt;Path&lt;/code&gt; → 编辑 → 新建 → 输入应用的绝对路径（例如 &lt;code&gt;C:\youtube-dl&lt;/code&gt; )，即可完成设置，其它方法就去问搜索引擎吧 😶。&lt;/p&gt;
